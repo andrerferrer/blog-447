@@ -1,24 +1,37 @@
-# README
+# Usage
+```
+cd ~/code/$USER
+git clone git@github.com:andrerferrer/blog-447
+cd blog-447
+bundle install
+stt # Open this folder in Sublime Text
+rails db:create
+rails db:migrate
+rails s
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To launch a server just run the `rails s` and open a web browser at [http://localhost:3000](http://localhost:3000):
 
-Things you may want to cover:
+Good Luck, Have Fun!
 
-* Ruby version
+# Extra notes:
+## To create a new rails app from zero
 
-* System dependencies
+- rails new
+- cd into the folder
+- git add commit and push (to push we need to `hub create` first)
 
-* Configuration
+after having the set up ready, we need to:
 
-* Database creation
+1. Create the Model
 
-* Database initialization
+- generate the Model
+- generate associations and validations (Tomorrow!)
+- seed! (create some examples in the database)
 
-* How to run the test suite
+2. Create the Mantras 🕉
 
-* Services (job queues, cache servers, search engines, etc.)
+- Routes
+- Controller
+- View
 
-* Deployment instructions
-
-* ...
