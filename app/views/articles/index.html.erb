@@ -27,3 +27,12 @@
 <br>
 
 <%= link_to 'New Article', new_article_path %>
+
+<!-- THIS IS FOR ASSETS -->
+<!-- <%#= image_tag('logo.png', width: 120) %> -->
+<!-- <img src="<%#= image_path('logo.png') %>" alt=""> -->
+
+<!-- THIS FOR CLOUDINARY PICTURES -->
+<%#= cl_image_tag('image_key_on_cloudinary') %>
+<%= cl_image_tag('g1rueyoukwwxajmwkbz7',
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>

@@ -10,5 +10,38 @@
   <%= @article.body %>
 </p>
 
+
+<% @article.photos.each do |photo| %>
+	<%= cl_image_tag(photo.key, width: 120) %>
+<% end %>
+
+
+<!-- <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%#= cl_image_path(@article.photo.key) %> )">
+  Breakfast
+</div>
+
+<style>
+	.card-category {
+	  background-size: cover;
+	  background-position: center;
+	  height: 180px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: white;
+	  font-size: 24px;
+	  font-weight: bold;
+	  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	  border-radius: 5px;
+	  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	}
+</style> -->
+
+
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', root_path %>
+
+
+ <!-- Just about HTML -->
+ <!-- image tag -->
+ <!-- <img class='img-round' id='avatar' src="https://i.pinimg.com/originals/bf/a3/75/bfa375807273c60c429c50c8ed73632e.jpg" alt=""> -->
